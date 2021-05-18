@@ -1,0 +1,26 @@
+# Hello World Program in Bash Shell
+function getfullname () {
+    echo "$1" | cut -d@ -f1
+}
+
+function getsurname () {
+    echo "$1" | cut -d. -f2
+}
+
+function getusername () {
+    local fullname=$(getfullname $email)
+    # echo $fullname
+
+    local firstinitial=${fullname:0:1}
+    # echo $firstinitial
+
+    local surname=$(getsurname $fullname)
+    # echo $surname
+
+    local user=$firstinitial$surname
+    echo $user
+}
+
+email="matt.revell@gmail.com"
+user=$(getusername $email)
+echo $user

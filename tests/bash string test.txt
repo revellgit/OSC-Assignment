@@ -1,0 +1,48 @@
+# Hello World Program in Bash Shell
+
+function show1 () {
+    if [ ! -z "$one" ]; then
+    echo "show arg 1 - $one"
+    fi
+    echo "$one$two"
+}
+
+function show2 () {
+    echo "show arg 2 - $two"
+}
+
+function show () {
+    local one="$1"
+    local two="$2"
+    show1
+    show2
+    # echo "$result"
+    echo "$one$two$one"
+}
+
+function main () {
+    local result=""
+    file="/users.csv"
+    tmp=$file
+    echo "file - $file"
+
+    if [[ $file == *"/"* ]]
+    then
+    printf "\nits a uri\n"
+    fi
+    
+    new="$(basename -- $tmp)"
+    echo "new - $new"
+    
+    if [[ "$file" == "$new" ]]
+    then
+    echo "the same"
+    fi
+    
+    result=$(show "$file" "$new")
+    printf "\n$result"
+}
+
+main
+echo "$result" # should show nothing
+
