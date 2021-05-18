@@ -1,0 +1,94 @@
+#!/bin/bash
+
+# TASK 1 - automated create users and groups from file
+# Matt Revell - Operating Systems Concepts 2021
+# This batch script automates user and group creation from a CSV file
+
+#basename get file from uri
+
+#count users created count++
+
+# wget uri
+# check if uri or local file? 
+# if wget --spider http://google.com 2>/dev/null; then
+#   echo "File exists"
+# else
+#   echo "File does not exist"
+# fi
+
+# use of log file and output also - make function to output and store in log
+
+
+# Check if a filename was supplied as an arguement when running the script
+# if not get a filename input
+# underscore local vars?
+
+function checkarguements () {
+	local _filename=""
+	echo 'Checking if filename supplied as arguement'
+	# _filename=$1 assume this so can remove else ?
+	if [ $# -ne 1 ]
+	then
+		echo 'No file arguement supplied'
+		read -p "Input a filename or URI: " _filename
+		echo "$_filename"
+	else
+		_filename=$1
+		echo "$_filename"
+	fi
+}
+
+function checkfile () {
+	# use wget if error output redirected then check result true/false
+	# The --spider option makes wget just check for the file instead of downloading it, and 2> /dev/null silences wget's stderr output.
+	
+	if wget --spider filename; then
+		echo "File exists"
+		# download it here?
+	else
+		echo "File does not exist or is local"
+		# check if local ?
+	fi
+}
+
+function end () {
+	echo 'Goodbye ...'
+}
+
+function title () {
+	clear
+	echo 'Titles'
+}
+
+function createusers () {
+	# use IFS ; save and restore current/old IFS
+
+	OLDIFS=$IFS
+	IFS=";"
+	
+	while read email username folder
+	do
+		# Functions for each of these (with checks inside):
+		# useradd
+		# usermod
+		# groupadd
+		# groupmod
+		# shared folder create	
+	done < filename
+	IFS=$OLDIFS
+}
+
+function main () {
+	local filename=""		# create a local variable ...
+	title
+	# create log file if it doesn't exist - append comments to logfile
+	# filename=$(checkarguements)
+	checkarguements filename	# check if filename in arguement, get input and return filename
+	checkfile			# try to wget if error file is local, if local file not present error out
+	basename "$filename"		# get filename from uri string
+	createusers filename		# pass filename to createusers function
+	end				# the end messages
+}
+
+main
+exit

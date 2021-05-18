@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# TASK 2 - ???????
+# For task 2 in this assignment you will write a script that compresses a given folder and uploads
+# it to a remote location – this is essentially a backup script. You should be able to use this script
+# to backup the contents of any directory in the local file system.
+
+function getdirectoryname () {
+	# test for arguements provided
+	# error checking and input
+}
+
+function compress () {
+	# compress dir into tar archive
+	# tar <destination file> <source>
+}
+
+function upload () {
+	# use scp secure copy to upload the archive to a remote host
+}
+
+function main () {
+	getdirectoryname
+	compress
+	upload	
+}
+
+main
+exit
