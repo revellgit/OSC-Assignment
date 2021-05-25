@@ -60,13 +60,29 @@ function createusers () {
 	OLDIFS=$IFS
 	IFS=";"
 	
+	while read email username folder
+	do
+		# Functions for each of these (with checks inside):
+		# useradd
+		# usermod
+		# groupadd
+		# groupmod
+		# shared folder create	
+	done < filename
+	IFS=$OLDIFS
 	
 }
 
 function main () {
 	local filename=""		# create a local variable ...
 	title
-	
+	# create log file if it doesn't exist - append comments to logfile
+	# filename=$(checkarguements)
+	checkarguements filename	# check if filename in arguement, get input and return filename
+	checkfile			# try to wget if error file is local, if local file not present error out
+	basename "$filename"		# get filename from uri string
+	createusers filename		# pass filename to createusers function
+	end				# the end messages
 }
 
 main
