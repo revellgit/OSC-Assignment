@@ -13,10 +13,31 @@ function getdirectoryname () {
 function compress () {
 	# compress dir into tar archive
 	# tar <destination file> <source>
+	# use tar to compress folder into file "backup.tar"
+	# tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
+
+	tar -czvf "backup.tar.gz" "$directorytocompress"
+	
+
+	
 }
 
 function upload () {
+	# get from user - ip (10.25.137.141), port (22), target directory (targetdir)
 	# use scp secure copy to upload the archive to a remote host
+	
+	# scp from local to remote
+	# scp file.txt remote_username@10.10.0.2:/remote/directory
+	# file.txt is file to copy
+	# remote_username is user on remote server
+	# 10.10.0.2 is server IP address
+	# /remote/directory is path to directory to copy file
+	
+	filename="backup.tar.gz"
+	read -p "IP: " ipaddress
+	read -p "Target Dir: " targetdir
+	read -p "Port: " port
+	scp -P $port "$filename" student@$ipaddress:"$targetdir"
 }
 
 function main () {
@@ -27,3 +48,5 @@ function main () {
 
 main
 exit
+
+# commentsS

@@ -1,0 +1,13 @@
+# Hello World Program in Bash Shell
+
+count=0
+echo $count
+
+if (( count < 1 ));
+then
+echo "zero"
+fi
+
+(( count++ ))
+
+echo $count
