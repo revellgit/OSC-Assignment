@@ -21,7 +21,7 @@ tar -czvf "backup.tar.gz" "$directory"
 echo "Compressed"
 
 filename="backup.tar.gz"
-	read -p "IP(10.25.137.141): " ipaddress
+	read -p "IP (10.25.100.33): " ipaddress
 	read -p "Target Dir (targetdir): " targetdir
 	read -p "Port (22): " port
 
