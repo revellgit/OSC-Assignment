@@ -4,20 +4,11 @@
 # Matt Revell - Operating Systems Concepts 2021
 # This batch script automates user and group creation from a CSV file
 
-#basename get file from uri
+# basename command to get only filename from uri
 
-#count users created count++
-
-# wget uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv
-# check if uri or local file? 
-# if [[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]; then
-#   echo "File exists"
-# else
-#   echo "File does not exist"
-# fi
+# count users created: count=0 (( count++ ))
 
 # use of log file and output also - make function to output and store in log
-
 
 # Check if a filename was supplied as an arguement when running the script
 # if not get a filename input
@@ -41,7 +32,13 @@ function checkarguements () {
 function checkfile () {
 	# use wget if error output redirected then check result true/false
 	# The --spider option makes wget just check for the file instead of downloading it, and 2> /dev/null silences wget's stderr output.
-	
+	# wget uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv
+	# check if uri or local file? 
+	# if [[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]; then
+	#   echo "File exists"
+	# else
+	#   echo "File does not exist"
+	# fi
 	
 }
 
