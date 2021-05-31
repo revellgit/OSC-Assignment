@@ -27,7 +27,7 @@ function end () {
 
 function getfilename () {
 	local _filename=""
-	echo 'No file arguement supplied'
+	# echo 'No file arguement supplied'
 	read -p "Input a filename or URI: " _filename
 	echo "$_filename"
 }
@@ -55,8 +55,60 @@ function getusername () {
 }
 
 function createuser () {
-	username=$(getusername $1)
-	useradd $username
+	email=$1
+	birthdate=$2
+	groups=$3
+	sharedfolder=$4
+
+	# create user
+	username=$(getusername $email)
+
+	# sudo userdel $username
+	sudo useradd -m $username
+	
+	# add password to user
+	MONTH=$(date -d "$birthdate" '+%m')
+	YEAR=$(date -d "$birthdate" '+%Y')
+	pass=$MONTH$YEAR
+	echo $pass
+	echo -e "$pass\n$pass" | sudo passwd --expire $username
+
+	# groups
+	echo $groups
+	if [ ! -z "$groups" ]
+	then
+		if [[ $groups == *","* ]]
+		then
+			section=1
+			eachgroup=$(echo "$groups" | cut -d, -f$section)
+			while [ ! -z "$eachgroup" ]
+			do
+				sudo groupadd -f $eachgroup
+				sudo usermod -aG $eachgroup $username
+				if [[ "$eachgroup" == "sudo" ]]
+				then
+					sudo echo 'alias off="systemctl poweroff"' >> /home/$username/.profile
+				fi
+				(( section++ ))
+				eachgroup=$(echo "$groups" | cut -d, -f$section)
+			done
+		else
+			eachgroup=$(echo "$groups" | cut -d, -f1)
+			echo $eachgroup
+			sudo groupadd -f $eachgroup
+			sudo usermod -aG $eachgroup $username
+			if [[ "$eachgroup" == "sudo" ]]
+			then
+				sudo echo 'alias off="systemctl poweroff"' >> /home/$username/.profile
+			fi
+		fi
+	fi
+	
+	if [ ! -z "$sharedfolder" ]
+	then
+		sudo mkdir $sharedfolder
+		sudo ln -s "$sharedfolder" "/home/$username/shared"
+	fi
 }
 
 function main () {
@@ -64,6 +116,7 @@ function main () {
 	# create log file if it doesn't exist - append comments to logfile
 
 	# check if arg/file provided when script executed
+
 	if [ $# -ne 1 ]
 	then
 		filename=$(getfilename)
@@ -79,7 +132,7 @@ function main () {
 		echo "URI provided - checking if file exists on server"
 		
 		# use wget --spider, if error output redirected then check result true/false
-		# The --spider option makes wget just check for the file instead of downloading it, and 2> /dev/null silences wget's stderr output.
+
 		# wget example uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv
 		# check if uri or local file?
  	
@@ -87,43 +140,58 @@ function main () {
 		then
 			echo "File exists on server .. downloading it"
 			wget $filename
-			onlyfile="$(basename $filename)"
-			
+			onlyfile=$(basename -- "$filename")
+			filename=$onlyfile
 		else
 			echo "File does not exist on server"
 			exit
 		fi
 	else
-		echo "Local filename provided as arguement"
-
+		echo "Local filename provided"
+		echo $filename
 		# Check if file exists in the local folder
-		if [ -f "$filename" ]
+		path=$PWD"/$filename"
+		echo $path
+
+		if [[ -f "$path" ]]
 		then
 			echo "File exists in local folder"
 		else
 			echo "The file does not exist"
 			exit
 		fi
+	fi
 	
 	# filename should now be local			
 	# use IFS ; save and restore current/old IFS
 
+	usercount=0
 	OLDIFS=$IFS
 	IFS=";"
 	
-	while read email username folder
+	while read email birthdate groups sharedfolder
 	do
+		if [ "$usercount" -gt 0 ]
+		then
 		# Functions for each of these (with checks inside):
 		# useradd
-		createuser $email
+			echo $email
+			createuser $email $birthdate $groups $sharedfolder
 
 		# usermod
 		# groupadd
 		# groupmod
 		# shared folder create	
+		
+
+		fi
+	(( usercount++ ))
 	done < $filename
 	IFS=$OLDIFS
+
+	echo $(( usercount-1 ))" users created"
 }
+
 
 title
 main
