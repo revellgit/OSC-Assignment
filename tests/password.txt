@@ -1,0 +1,8 @@
+D="2013/01/17"
+DAY=$(date -d "$D" '+%d')
+MONTH=$(date -d "$D" '+%m')
+YEAR=$(date -d "$D" '+%Y')
+
+echo "Day: $DAY"
+echo "Month: $MONTH"
+echo "Year: $YEAR"

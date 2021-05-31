@@ -60,33 +60,64 @@ function title () {
 	echo 'Titles'
 }
 
-function createusers () {
+function getfullname () {
+    echo "$1" | cut -d@ -f1
+}
+
+function getsurname () {
+    echo "$1" | cut -d. -f2
+}
+
+function getusername () {
+    local fullname=$(getfullname $email)
+    # echo $fullname
+
+    local firstinitial=${fullname:0:1}
+    # echo $firstinitial
+
+    local surname=$(getsurname $fullname)
+    # echo $surname
+
+    local user=$firstinitial$surname
+    echo $user
+}
+
+function createuser () {
+	username=$(getusername $1)
+	useradd $username
+}
+
+function create () {
 	# use IFS ; save and restore current/old IFS
 
 	OLDIFS=$IFS
 	IFS=";"
 	
-	while read email username folder
+	while read email
 	do
 		# Functions for each of these (with checks inside):
-		# useradd
+		# create user
+		createuser $email
+
 		# usermod
 		# groupadd
 		# groupmod
 		# shared folder create	
-	done < filename
+	done < $filename
 	IFS=$OLDIFS
 }
 
 function main () {
-	local filename=""		# create a local variable ...
-	title
-	# create log file if it doesn't exist - append comments to logfile
+	# local filename=""		# create a local variable ...
+	title				# show title of script and instructions
+	# create log file if it doesn't exist? - append comments to logfile
+
 	# filename=$(checkarguements)
 	checkarguements filename	# check if filename in arguement, get input and return filename
 	checkfile			# try to wget if error file is local, if local file not present error out
 	basename "$filename"		# get filename from uri string
-	createusers filename		# pass filename to createusers function
+
+	create $filename		# pass filename to createusers function
 	end				# the end messages
 }
 

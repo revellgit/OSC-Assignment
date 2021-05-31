@@ -5,53 +5,107 @@
 # This batch script automates user and group creation from a CSV file
 
 # basename command to get only filename from uri
-
 # count users created: count=0 (( count++ ))
-
 # use of log file and output also - make function to output and store in log
 
-# Check if a filename was supplied as an arguement when running the script
-# if not get a filename input
-# underscore local vars?
-
-function checkarguements () {
-	local _filename=""
-	echo 'Checking if filename supplied as arguement'
-	# _filename=$1 assume this so can remove else ?
-	if [ $# -ne 1 ]
-	then
-		echo 'No file arguement supplied'
-		read -p "Input a filename or URI: " _filename
-		echo "$_filename"
-	else
-		_filename=$1
-		echo "$_filename"
-	fi
-}
-
-function checkfile () {
-	# use wget if error output redirected then check result true/false
-	# The --spider option makes wget just check for the file instead of downloading it, and 2> /dev/null silences wget's stderr output.
-	# wget uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv
-	# check if uri or local file? 
-	# if [[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]; then
-	#   echo "File exists"
-	# else
-	#   echo "File does not exist"
-	# fi
-	
-}
-
-function end () {
-	echo 'Goodbye ...'
-}
+# FUNCTIONS -----------------------------------------------------------------
 
 function title () {
 	clear
-	echo 'Titles'
+	echo 'Task 1 Script to create user environments'
+	echo "*****************************************"
+	echo " "
 }
 
-function createusers () {
+function end () {
+	echo " "
+	echo 'Goodbye ...'
+}
+
+# if a filename/URI was not supplied as an arguement when running the script
+# get an input from the user
+
+function getfilename () {
+	local _filename=""
+	echo 'No file arguement supplied'
+	read -p "Input a filename or URI: " _filename
+	echo "$_filename"
+}
+
+function getfullname () {
+    echo "$1" | cut -d@ -f1
+}
+
+function getsurname () {
+    echo "$1" | cut -d. -f2
+}
+
+function getusername () {
+	email=$1
+
+	local fullname=$(getfullname $email)
+    
+   	local firstinitial=${fullname:0:1}
+    
+    	local surname=$(getsurname $fullname)
+    
+    	local user=$firstinitial$surname
+
+    	echo $user
+}
+
+function createuser () {
+	username=$(getusername $1)
+	useradd $username
+}
+
+function main () {
+	
+	# create log file if it doesn't exist - append comments to logfile
+
+	# check if arg/file provided when script executed
+	if [ $# -ne 1 ]
+	then
+		filename=$(getfilename)
+	else
+		filename=$1
+	fi	
+	
+	# check if a URI or local filename provided and do action depending on this.
+	# check if URI or local file
+	
+	if [[ $filename == *"/"* ]]		# if filename has a / in it then assume URI
+	then
+		echo "URI provided - checking if file exists on server"
+		
+		# use wget --spider, if error output redirected then check result true/false
+		# The --spider option makes wget just check for the file instead of downloading it, and 2> /dev/null silences wget's stderr output.
+		# wget example uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv
+		# check if uri or local file?
+ 	
+		if [[ `wget -S --spider $filename 2>&1 | grep 'HTTP/1.1 200 OK'` ]]
+		then
+			echo "File exists on server .. downloading it"
+			wget $filename
+			onlyfile="$(basename $filename)"
+			
+		else
+			echo "File does not exist on server"
+			exit
+		fi
+	else
+		echo "Local filename provided as arguement"
+
+		# Check if file exists in the local folder
+		if [ -f "$filename" ]
+		then
+			echo "File exists in local folder"
+		else
+			echo "The file does not exist"
+			exit
+		fi
+	
+	# filename should now be local			
 	# use IFS ; save and restore current/old IFS
 
 	OLDIFS=$IFS
@@ -61,26 +115,17 @@ function createusers () {
 	do
 		# Functions for each of these (with checks inside):
 		# useradd
+		createuser $email
+
 		# usermod
 		# groupadd
 		# groupmod
 		# shared folder create	
-	done < filename
+	done < $filename
 	IFS=$OLDIFS
-	
 }
 
-function main () {
-	local filename=""		# create a local variable ...
-	title
-	# create log file if it doesn't exist - append comments to logfile
-	# filename=$(checkarguements)
-	checkarguements filename	# check if filename in arguement, get input and return filename
-	checkfile			# try to wget if error file is local, if local file not present error out
-	basename "$filename"		# get filename from uri string
-	createusers filename		# pass filename to createusers function
-	end				# the end messages
-}
-
+title
 main
+end
 exit
