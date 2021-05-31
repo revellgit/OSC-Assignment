@@ -8,9 +8,9 @@
 
 #count users created count++
 
-# wget uri
+# wget uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv
 # check if uri or local file? 
-# if wget --spider http://google.com 2>/dev/null; then
+# if [[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]; then
 #   echo "File exists"
 # else
 #   echo "File does not exist"
