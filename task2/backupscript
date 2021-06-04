@@ -1,14 +1,22 @@
 #!/bin/bash
 
-if [ $# -ne 1 ]
-then
-	echo "No filename given"
-	read -p "Enter directory to backup: " directory
+# TASK 2 - backup a directory and copy it to a folder on a server address
+# Matt Revell - Operating Systems Concepts 2021
+# This batch script automates folder compression and copy to server for backup
 
-else
-	directory=$1
+# CODE ---------------------------------------------------------------------
+
+# Check if there are were any arguements used when the script was executed
+# If not then get an input from the user.
+if [ $# -ne 1 ]
+	then
+		echo "No directory specified"
+		read -p "Please enter a directory to backup: " directory
+	else
+		directory=$1
 fi
 
+# Check if the directory exists. If not then exit the program.
 if [ ! -d "$directory" ]
 then
 	echo "Directory does not exist"
@@ -16,17 +24,20 @@ then
 	exit
 fi
 
-tar -czvf "backup.tar.gz" "$directory"
-
+# Compress the directory to a tar file
+filename="backup.tar.gz"
+tar -czvf "$filename" "$directory"
 echo "Compressed"
 
-filename="backup.tar.gz"
-	read -p "IP (10.25.100.33): " ipaddress
-	read -p "Target Dir (targetdir): " targetdir
-	read -p "Port (22): " port
+# Get the arguements for secure copy from the user (e.g. IP, DIR, PORT)
+read -p "IP (10.25.100.33): " ipaddress
+read -p "Target Dir (targetdir): " targetdir
+read -p "Port (22): " port
 
-	scp -P $port "$filename" student@$ipaddress:"$targetdir"
-
+# Copy the file to the server
+scp -P $port "$filename" student@$ipaddress:"$targetdir"
 echo "Backup file copied"
 
+exit
 
+# CODE ENDS ---------------------------------------------------------------
