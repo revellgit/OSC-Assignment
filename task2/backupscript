@@ -8,10 +8,18 @@
 
 # Check if there are were any arguements used when the script was executed
 # If not then get an input from the user.
+
+clear
+echo " "
+echo " **********************"
+echo " Task 2 - Backup Script"
+echo " **********************"
+echo " "
+
 if [ $# -ne 1 ]
 	then
 		echo "No directory specified"
-		read -p "Please enter a directory to backup: " directory
+		read -p "Please enter a directory to backup (hint - 'testdir') : " directory
 	else
 		directory=$1
 fi
@@ -27,16 +35,21 @@ fi
 # Compress the directory to a tar file
 filename="backup.tar.gz"
 tar -czvf "$filename" "$directory"
-echo "Compressed"
+echo " "
+echo "The above files from $directory have been compressed into $filename"
+echo " "
 
 # Get the arguements for secure copy from the user (e.g. IP, DIR, PORT)
+echo "Please enter the values for the destination server"
+
 read -p "IP (10.25.100.33): " ipaddress
 read -p "Target Dir (targetdir): " targetdir
 read -p "Port (22): " port
 
 # Copy the file to the server
 scp -P $port "$filename" student@$ipaddress:"$targetdir"
-echo "Backup file copied"
+echo " "
+echo "The backup file has been copied"
 
 exit
 
