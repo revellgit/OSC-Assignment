@@ -1,0 +1,26 @@
+***************************************************************************
+LOGGING FOR DATE & TIME:  05/06/2021 01:33:36
+***************************************************************************
+useradd: user 'edijkstra' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/edijkstra/shared/staffData': File exists
+useradd: user 'jmccarthy' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/jmccarthy/shared/visitorData': File exists
+useradd: user 'atanenbaum' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/atanenbaum/shared/staffData': File exists
+useradd: user 'aturing' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/aturing/shared/visitorData': File exists
+useradd: user 'ltorvalds' already exists
+useradd: user 'bstroustroup' already exists
+useradd: user 'kthompson' already exists
+mkdir: cannot create directory ‘/visitor’: File exists
+ln: failed to create symbolic link '/home/kthompson/shared/visitor': File exists
+useradd: user 'jgosling' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/jgosling/shared/staffData': File exists
+useradd: user 'tberners-lee' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/tberners-lee/shared/visitorData': File exists

@@ -8,6 +8,7 @@
 
 function title () {
 	clear
+	echo " "
 	echo 'Task 1 Script to create user environments'
 	echo "*****************************************"
 	echo " "
@@ -45,11 +46,11 @@ function getusername () {
     
    	local firstinitial=${fullname:0:1}
     
-    local surname=$(getsurname $fullname)
+	local surname=$(getsurname $fullname)
     
-    local user=$firstinitial$surname
+    	local user=$firstinitial$surname
 
-    echo $user
+    	echo $user
 }
 
 # Main function for user environment creation
@@ -58,21 +59,20 @@ function createuser () {
 	birthdate=$2
 	groups=$3
 	sharedfolder=$4
-	logfile=$5
-
+	
 	# create username from email address
 	username=$(getusername $email)
 
 	# Add the user called 'username' and log any errors 
 	# sudo userdel $username
-	sudo useradd -m $username 2>> "$logfile"
+	sudo useradd -m $username 2>> logfile.txt
 	
 	# add password to create user. Password expires so that it must be changed on login
 	MONTH=$(date -d "$birthdate" '+%m')
 	YEAR=$(date -d "$birthdate" '+%Y')
 	pass=$MONTH$YEAR
 	echo $pass
-	echo -e "$pass\n$pass" | sudo passwd --expire $username
+	echo -e "$pass\n$pass" | sudo passwd --expire $username 2>> logfile.txt
 
 	# create groups for this user if there are any.
 	# check if the group field contains commas (i.e. several groups to create or add the user to)
@@ -87,12 +87,12 @@ function createuser () {
 			while [ ! -z "$eachgroup" ]
 			do
 				# attempt to create the group whether it exists or not and add the user to that group
-				sudo groupadd -f $eachgroup
-				sudo usermod -aG $eachgroup $username
+				sudo groupadd -f $eachgroup 2>> logfile.txt
+				sudo usermod -aG $eachgroup $username 2>> logfile.txt
 				# if the user belongs to sudo then create the alias. NOT WORKING ???
 				if [[ "$eachgroup" == "sudo" ]]
 				then
-					echo 'alias off="systemctl poweroff"' >> /home/$username/.profile
+					echo 'alias off="systemctl poweroff"' >> /home/$username/.profile 2>> logfile.txt
 				fi
 				(( section++ ))
 				eachgroup=$(echo "$groups" | cut -d, -f$section)
@@ -101,11 +101,11 @@ function createuser () {
 			# if the groups field doesn't contain commas then just add one group etc. (i.e. no while loop needed)
 			eachgroup=$(echo "$groups" | cut -d, -f1)
 			echo $eachgroup
-			sudo groupadd -f $eachgroup
-			sudo usermod -aG $eachgroup $username
+			sudo groupadd -f $eachgroup 2>> logfile.txt
+			sudo usermod -aG $eachgroup $username 2>> logfile.txt
 			if [[ "$eachgroup" == "sudo" ]]
 			then
-				echo 'alias off="systemctl poweroff"' >> /home/$username/.profile
+				echo 'alias off="systemctl poweroff"' >> /home/$username/.profile 2>> logfile.txt
 			fi
 		fi
 	fi
@@ -113,22 +113,22 @@ function createuser () {
 	# Shared folder is created with a soft link inside
 	if [ ! -z "$sharedfolder" ]
 	then
-		sudo mkdir $sharedfolder
-		sudo ln -s "$sharedfolder" "/home/$username/shared"
+		sudo mkdir $sharedfolder 2>> logfile.txt
+		sudo ln -s "$sharedfolder" "/home/$username/shared" 2>> logfile.txt
 	fi
 }
 
 # Main function for initial checks, looping through users file.
 function main () {	
-	# create log file if it doesn't exist - append comments/errors to the logfile
-	logfile="logfile.txt"
-
+	args=$1
+	numargs=$2
+	
 	# check if arg/file provided when script executed
-	if [ $# -ne 1 ]
+	if [ $numargs -ne 1 ]
 	then
 		filename=$(getfilename)
 	else
-		filename=$1
+		filename=$args
 	fi	
 	
 	# check if a URI or local filename provided and do action depending on this.
@@ -168,7 +168,10 @@ function main () {
 	
 	# filename should now be local			
 	# use IFS ';' separator/delimiter save and restore current/old IFS
-
+	# start a new logfile entry
+	echo "***************************************************************************" >> logfile.txt
+	echo "LOGGING FOR DATE & TIME: " $(date '+%d/%m/%Y %H:%M:%S') >> logfile.txt
+	echo "***************************************************************************" >> logfile.txt
 	usercount=0
 	
 	OLDIFS=$IFS
@@ -191,22 +194,24 @@ function main () {
 	
 	# Results
 	echo $(( usercount-1 ))" users have been created"
-
+	
 	# Ask user if they want to view the logfile.
 	read -p "Do you wish to view the log file? (Yy/Nn): " yn
 	if [ "$yn" = "Y" ] || [ "$yn" = "y" ]
 	then
-		less "$logile"
+		clear		
+		cat logfile.txt | less
 	fi
 }
 
 # END OF FUNCTIONS --------------------------------------------------------------------
 
 # Call functions from above to run the program/script.
-logfile="logfile.txt"
 
 title
-main
+args=$1
+numargs=$#
+main "$args" "$numargs"
 end
 
 exit
