@@ -4,11 +4,7 @@
 # Matt Revell - Operating Systems Concepts 2021
 # This batch script automates user and group creation from a CSV file
 
-# basename command to get only filename from uri
-# count users created: count=0 (( count++ ))
-# use of log file and output also - make function to output and store in log
-
-# FUNCTIONS -----------------------------------------------------------------
+# FUNCTIONS ----------------------------------------------------------------------
 
 function title () {
 	clear
@@ -19,11 +15,11 @@ function title () {
 
 function end () {
 	echo " "
-	echo 'Goodbye ...'
+	echo 'Thanks for using the script. Goodbye ...'
 }
 
 # if a filename/URI was not supplied as an arguement when running the script
-# get an input from the user
+# get an input from the user and return it.
 
 function getfilename () {
 	local _filename=""
@@ -32,6 +28,8 @@ function getfilename () {
 	echo "$_filename"
 }
 
+# Functions for extracting the username from an email address
+# uses the 'cut' command with delimiters @,.
 function getfullname () {
     echo "$1" | cut -d@ -f1
 }
@@ -47,33 +45,38 @@ function getusername () {
     
    	local firstinitial=${fullname:0:1}
     
-    	local surname=$(getsurname $fullname)
+    local surname=$(getsurname $fullname)
     
-    	local user=$firstinitial$surname
+    local user=$firstinitial$surname
 
-    	echo $user
+    echo $user
 }
 
+# Main function for user environment creation
 function createuser () {
 	email=$1
 	birthdate=$2
 	groups=$3
 	sharedfolder=$4
+	logfile=$5
 
-	# create user
+	# create username from email address
 	username=$(getusername $email)
 
+	# Add the user called 'username' and log any errors 
 	# sudo userdel $username
-	sudo useradd -m $username
+	sudo useradd -m $username 2>> "$logfile"
 	
-	# add password to user
+	# add password to create user. Password expires so that it must be changed on login
 	MONTH=$(date -d "$birthdate" '+%m')
 	YEAR=$(date -d "$birthdate" '+%Y')
 	pass=$MONTH$YEAR
 	echo $pass
 	echo -e "$pass\n$pass" | sudo passwd --expire $username
 
-	# groups
+	# create groups for this user if there are any.
+	# check if the group field contains commas (i.e. several groups to create or add the user to)
+	# cut up the groups with the delimiter ','
 	echo $groups
 	if [ ! -z "$groups" ]
 	then
@@ -83,27 +86,31 @@ function createuser () {
 			eachgroup=$(echo "$groups" | cut -d, -f$section)
 			while [ ! -z "$eachgroup" ]
 			do
+				# attempt to create the group whether it exists or not and add the user to that group
 				sudo groupadd -f $eachgroup
 				sudo usermod -aG $eachgroup $username
+				# if the user belongs to sudo then create the alias. NOT WORKING ???
 				if [[ "$eachgroup" == "sudo" ]]
 				then
-					sudo echo 'alias off="systemctl poweroff"' >> /home/$username/.profile
+					echo 'alias off="systemctl poweroff"' >> /home/$username/.profile
 				fi
 				(( section++ ))
 				eachgroup=$(echo "$groups" | cut -d, -f$section)
 			done
 		else
+			# if the groups field doesn't contain commas then just add one group etc. (i.e. no while loop needed)
 			eachgroup=$(echo "$groups" | cut -d, -f1)
 			echo $eachgroup
 			sudo groupadd -f $eachgroup
 			sudo usermod -aG $eachgroup $username
 			if [[ "$eachgroup" == "sudo" ]]
 			then
-				sudo echo 'alias off="systemctl poweroff"' >> /home/$username/.profile
+				echo 'alias off="systemctl poweroff"' >> /home/$username/.profile
 			fi
 		fi
 	fi
 	
+	# Shared folder is created with a soft link inside
 	if [ ! -z "$sharedfolder" ]
 	then
 		sudo mkdir $sharedfolder
@@ -111,12 +118,12 @@ function createuser () {
 	fi
 }
 
-function main () {
-	
-	# create log file if it doesn't exist - append comments to logfile
+# Main function for initial checks, looping through users file.
+function main () {	
+	# create log file if it doesn't exist - append comments/errors to the logfile
+	logfile="logfile.txt"
 
 	# check if arg/file provided when script executed
-
 	if [ $# -ne 1 ]
 	then
 		filename=$(getfilename)
@@ -125,21 +132,18 @@ function main () {
 	fi	
 	
 	# check if a URI or local filename provided and do action depending on this.
-	# check if URI or local file
-	
-	if [[ $filename == *"/"* ]]		# if filename has a / in it then assume URI
+	# if filename has a / in it then assume URI
+	if [[ $filename == *"/"* ]]
 	then
 		echo "URI provided - checking if file exists on server"
 		
 		# use wget --spider, if error output redirected then check result true/false
-
-		# wget example uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv
-		# check if uri or local file?
- 	
+		# wget example uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv 	
 		if [[ `wget -S --spider $filename 2>&1 | grep 'HTTP/1.1 200 OK'` ]]
 		then
 			echo "File exists on server .. downloading it"
 			wget $filename
+			# After downloading the file, remove the actual filename from the URI with 'basename'
 			onlyfile=$(basename -- "$filename")
 			filename=$onlyfile
 		else
@@ -163,37 +167,46 @@ function main () {
 	fi
 	
 	# filename should now be local			
-	# use IFS ; save and restore current/old IFS
+	# use IFS ';' separator/delimiter save and restore current/old IFS
 
 	usercount=0
+	
 	OLDIFS=$IFS
 	IFS=";"
 	
+	# Main loop that extracts lines from the users file and uses the fields for user creation
 	while read email birthdate groups sharedfolder
 	do
+		# loop through the users file. Ignore the first line which is headings only.
 		if [ "$usercount" -gt 0 ]
 		then
-		# Functions for each of these (with checks inside):
-		# useradd
 			echo $email
-			createuser $email $birthdate $groups $sharedfolder
-
-		# usermod
-		# groupadd
-		# groupmod
-		# shared folder create	
-		
-
+			# Call the create function with arguements provided from the users file.
+			createuser $email $birthdate $groups $sharedfolder $logfile
 		fi
-	(( usercount++ ))
+		(( usercount++ ))
 	done < $filename
+	
 	IFS=$OLDIFS
+	
+	# Results
+	echo $(( usercount-1 ))" users have been created"
 
-	echo $(( usercount-1 ))" users created"
+	# Ask user if they want to view the logfile.
+	read -p "Do you wish to view the log file? (Yy/Nn): " yn
+	if [ "$yn" = "Y" ] || [ "$yn" = "y" ]
+	then
+		less "$logile"
+	fi
 }
 
+# END OF FUNCTIONS --------------------------------------------------------------------
+
+# Call functions from above to run the program/script.
+logfile="logfile.txt"
 
 title
 main
 end
+
 exit
