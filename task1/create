@@ -60,8 +60,12 @@ function createuser () {
 	birthdate=$2
 	groups=$3
 	sharedfolder=$4
+	
+	# blank lines on screen an in logfile to seperate sections
+	echo -e "\e[33mEmail:\e[39m $email / \e[33mDOB:\e39m $birthdate / \e[33mGroups:\e[39em $groups / \e[33mShared:\e[39em $sharedfolder"
 	echo " "
 	echo " " >> logfile.txt
+	
 	# create username from email address
 	username=$(getusername $email)
 
@@ -73,13 +77,13 @@ function createuser () {
 	MONTH=$(date -d "$birthdate" '+%m')
 	YEAR=$(date -d "$birthdate" '+%Y')
 	pass=$MONTH$YEAR
-	echo $pass
+	# echo $pass
 	echo -e "$pass\n$pass" | sudo passwd --expire $username 2>> logfile.txt
 
 	# create groups for this user if there are any.
 	# check if the group field contains commas (i.e. several groups to create or add the user to)
 	# cut up the groups with the delimiter ','
-	echo $groups
+	# echo $groups
 	if [ ! -z "$groups" ]
 	then
 		if [[ $groups == *","* ]]
@@ -117,6 +121,7 @@ function createuser () {
 	then
 		sudo mkdir $sharedfolder 2>> logfile.txt
 		sudo ln -s "$sharedfolder" "/home/$username/shared" 2>> logfile.txt
+		# chmod - set permissions for the sharedfolder chmod XXX "/home/$username/shared" ???
 	fi
 }
 
