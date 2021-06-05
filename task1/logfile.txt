@@ -59,3 +59,1999 @@ ln: failed to create symbolic link '/home/jgosling/shared/staffData': File exist
 useradd: user 'tberners-lee' already exists
 mkdir: cannot create directory ‘/visitorData’: File exists
 ln: failed to create symbolic link '/home/tberners-lee/shared/visitorData': File exists
+***************************************************************************
+LOGGING FOR DATE & TIME:  05/06/2021 13:09:04
+***************************************************************************
+ 
+useradd: user 'edijkstra' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/edijkstra/shared/staffData': File exists
+ 
+useradd: user 'jmccarthy' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/jmccarthy/shared/visitorData': File exists
+ 
+useradd: user 'atanenbaum' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/atanenbaum/shared/staffData': File exists
+ 
+useradd: user 'aturing' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/aturing/shared/visitorData': File exists
+ 
+useradd: user 'ltorvalds' already exists
+ 
+useradd: user 'bstroustroup' already exists
+ 
+useradd: user 'kthompson' already exists
+mkdir: cannot create directory ‘/visitor’: File exists
+ln: failed to create symbolic link '/home/kthompson/shared/visitor': File exists
+ 
+useradd: user 'jgosling' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/jgosling/shared/staffData': File exists
+ 
+useradd: user 'tberners-lee' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/tberners-lee/shared/visitorData': File exists
+***************************************************************************
+LOGGING FOR DATE & TIME:  05/06/2021 13:09:42
+***************************************************************************
+ 
+useradd: user 'edijkstra' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/edijkstra/shared/staffData': File exists
+ 
+useradd: user 'jmccarthy' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/jmccarthy/shared/visitorData': File exists
+ 
+useradd: user 'atanenbaum' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/atanenbaum/shared/staffData': File exists
+ 
+useradd: user 'aturing' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/aturing/shared/visitorData': File exists
+ 
+useradd: user 'ltorvalds' already exists
+ 
+useradd: user 'bstroustroup' already exists
+ 
+useradd: user 'kthompson' already exists
+mkdir: cannot create directory ‘/visitor’: File exists
+ln: failed to create symbolic link '/home/kthompson/shared/visitor': File exists
+ 
+useradd: user 'jgosling' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/jgosling/shared/staffData': File exists
+ 
+useradd: user 'tberners-lee' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/tberners-lee/shared/visitorData': File exists
+***************************************************************************
+LOGGING FOR DATE & TIME:  05/06/2021 13:15:37
+***************************************************************************
+ 
+useradd: user 'edijkstra' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/edijkstra/shared/staffData': File exists
+ 
+useradd: user 'jmccarthy' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/jmccarthy/shared/visitorData': File exists
+ 
+useradd: user 'atanenbaum' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/atanenbaum/shared/staffData': File exists
+ 
+useradd: user 'aturing' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/aturing/shared/visitorData': File exists
+ 
+useradd: user 'ltorvalds' already exists
+ 
+useradd: user 'bstroustroup' already exists
+ 
+useradd: user 'kthompson' already exists
+mkdir: cannot create directory ‘/visitor’: File exists
+ln: failed to create symbolic link '/home/kthompson/shared/visitor': File exists
+ 
+useradd: user 'jgosling' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/jgosling/shared/staffData': File exists
+ 
+useradd: user 'tberners-lee' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/tberners-lee/shared/visitorData': File exists
+***************************************************************************
+LOGGING FOR DATE & TIME:  05/06/2021 13:17:13
+***************************************************************************
+ 
+useradd: user 'edijkstra' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/edijkstra/shared/staffData': File exists
+ 
+useradd: user 'jmccarthy' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/jmccarthy/shared/visitorData': File exists
+ 
+useradd: user 'atanenbaum' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/atanenbaum/shared/staffData': File exists
+ 
+useradd: user 'aturing' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/aturing/shared/visitorData': File exists
+ 
+useradd: user 'ltorvalds' already exists
+ 
+useradd: user 'bstroustroup' already exists
+ 
+useradd: user 'kthompson' already exists
+mkdir: cannot create directory ‘/visitor’: File exists
+ln: failed to create symbolic link '/home/kthompson/shared/visitor': File exists
+ 
+useradd: user 'jgosling' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/jgosling/shared/staffData': File exists
+ 
+useradd: user 'tberners-lee' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/tberners-lee/shared/visitorData': File exists
+***************************************************************************
+LOGGING FOR DATE & TIME:  05/06/2021 13:24:01
+***************************************************************************
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '## TASK 1 - automated create users and groups from file'
+passwd: user '## TASK 1 - automated create users and groups from file' does not exist
+ 
+useradd: invalid user name '## Matt Revell - Operating Systems Concepts 2021'
+passwd: user '## Matt Revell - Operating Systems Concepts 2021' does not exist
+ 
+useradd: invalid user name '## This batch script automates user and group creation from a CSV file'
+passwd: user '## This batch script automates user and group creation from a CSV file' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '## FUNCTIONS ----------------------------------------------------------------------'
+passwd: user '## FUNCTIONS ----------------------------------------------------------------------' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name 'ffunction title () {'
+passwd: user 'ffunction title () {' does not exist
+ 
+useradd: invalid user name '		clear'
+passwd: user '		clear' does not exist
+ 
+useradd: invalid user name '		echo " "'
+passwd: user '		echo " "' does not exist
+ 
+useradd: invalid user name '		echo -e "e[33m*******************************************"'
+passwd: user '		echo -e "e[33m*******************************************"' does not exist
+ 
+useradd: invalid user name '		echo -e "Task 1 - Script to create user environments"'
+passwd: user '		echo -e "Task 1 - Script to create user environments"' does not exist
+ 
+useradd: invalid user name '		echo -e "*******************************************e[39m"'
+passwd: user '		echo -e "*******************************************e[39m"' does not exist
+ 
+useradd: invalid user name '		echo " "'
+passwd: user '		echo " "' does not exist
+ 
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name 'ffunction end () {'
+passwd: user 'ffunction end () {' does not exist
+ 
+useradd: invalid user name '		echo " "'
+passwd: user '		echo " "' does not exist
+ 
+useradd: invalid user name '	 Goodbye '
+passwd: user '	 Goodbye ' does not exist
+ 
+useradd: user '}}' already exists
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '## if a filename/URI was not supplied as an arguement when running the script'
+passwd: user '## if a filename/URI was not supplied as an arguement when running the script' does not exist
+ 
+passwd: user '#' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name 'ffunction getfilename () {'
+passwd: user 'ffunction getfilename () {' does not exist
+ 
+useradd: invalid user name '		local _filename=""'
+passwd: user '		local _filename=""' does not exist
+ 
+useradd: invalid user name '		# echo 'No file arguement supplied''
+passwd: user '		# echo 'No file arguement supplied'' does not exist
+ 
+useradd: invalid user name '		read -p "Input a filename or URI: " _filename'
+passwd: user '		read -p "Input a filename or URI: " _filename' does not exist
+ 
+useradd: invalid user name '		echo "$_filename"'
+passwd: user '		echo "$_filename"' does not exist
+ 
+useradd: user '}}' already exists
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '## Functions for extracting the username from an email address'
+passwd: user '## Functions for extracting the username from an email address' does not exist
+ 
+useradd: invalid user name '## uses the 'cut' command with delimiters '
+passwd: user '## uses the 'cut' command with delimiters ' does not exist
+ 
+useradd: invalid user name 'ffunction getfullname () {'
+passwd: user 'ffunction getfullname () {' does not exist
+ 
+useradd: invalid user name '     echo "$1" | cut -d'
+passwd: user '     echo "$1" | cut -d' does not exist
+ 
+useradd: user '}}' already exists
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name 'ffunction getsurname () {'
+passwd: user 'ffunction getsurname () {' does not exist
+ 
+useradd: invalid user name '  -f2'
+passwd: user '  -f2' does not exist
+ 
+useradd: user '}}' already exists
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name 'ffunction getusername () {'
+passwd: user 'ffunction getusername () {' does not exist
+ 
+useradd: invalid user name '		email=$1'
+passwd: user '		email=$1' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '		local fullname=$(getfullname $email)'
+passwd: user '		local fullname=$(getfullname $email)' does not exist
+ 
+useradd: invalid user name '     '
+passwd: user '     ' does not exist
+ 
+useradd: invalid user name '    	local firstinitial=${fullname:0:1}'
+passwd: user '    	local firstinitial=${fullname:0:1}' does not exist
+ 
+useradd: invalid user name '     '
+passwd: user '     ' does not exist
+ 
+useradd: invalid user name '		local surname=$(getsurname $fullname)'
+passwd: user '		local surname=$(getsurname $fullname)' does not exist
+ 
+useradd: invalid user name '     '
+passwd: user '     ' does not exist
+ 
+useradd: invalid user name '     	local user=$firstinitial$surname'
+passwd: user '     	local user=$firstinitial$surname' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '     	echo $user'
+passwd: user '     	echo $user' does not exist
+ 
+useradd: user '}}' already exists
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '## Main function for user environment creation'
+passwd: user '## Main function for user environment creation' does not exist
+ 
+useradd: invalid user name 'ffunction createuser () {'
+passwd: user 'ffunction createuser () {' does not exist
+ 
+useradd: invalid user name '		email=$1'
+passwd: user '		email=$1' does not exist
+ 
+useradd: invalid user name '		birthdate=$2'
+passwd: user '		birthdate=$2' does not exist
+ 
+useradd: invalid user name '		groups=$3'
+passwd: user '		groups=$3' does not exist
+ 
+useradd: invalid user name '		sharedfolder=$4'
+passwd: user '		sharedfolder=$4' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		# blank lines on screen an in logfile to seperate sections'
+passwd: user '		# blank lines on screen an in logfile to seperate sections' does not exist
+ 
+useradd: invalid user name '		echo " "'
+passwd: user '		echo " "' does not exist
+ 
+useradd: invalid user name '		echo -e "e[33mEmail:e[39m $email / e[33mDOB:e[39m $birthdate / e[33mGroups:e[39m $groups / e[33mShared:e[39m $sharedfolder"'
+passwd: user '		echo -e "e[33mEmail:e[39m $email / e[33mDOB:e[39m $birthdate / e[33mGroups:e[39m $groups / e[33mShared:e[39m $sharedfolder"' does not exist
+ 
+useradd: invalid user name '		echo " "'
+passwd: user '		echo " "' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		# create username from email address'
+passwd: user '		# create username from email address' does not exist
+ 
+useradd: invalid user name '		username=$(getusername $email)'
+passwd: user '		username=$(getusername $email)' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '		# Add the user called 'username' and log any errors '
+passwd: user '		# Add the user called 'username' and log any errors ' does not exist
+ 
+useradd: invalid user name '		# sudo userdel $username'
+passwd: user '		# sudo userdel $username' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '	 Password expires so that it must be changed on login'
+passwd: user '	 Password expires so that it must be changed on login' does not exist
+ 
+useradd: invalid user name '		MONTH=$(date -d "$birthdate" '+%m')'
+passwd: user '		MONTH=$(date -d "$birthdate" '+%m')' does not exist
+ 
+useradd: invalid user name '		YEAR=$(date -d "$birthdate" '+%Y')'
+passwd: user '		YEAR=$(date -d "$birthdate" '+%Y')' does not exist
+ 
+useradd: invalid user name '		pass=$MONTH$YEAR'
+passwd: user '		pass=$MONTH$YEAR' does not exist
+ 
+useradd: invalid user name '		# echo $pass'
+passwd: user '		# echo $pass' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '	'
+passwd: user '	' does not exist
+ 
+useradd: invalid user name '	e'
+passwd: user '	e' does not exist
+ 
+useradd: invalid user name '		# cut up the groups with the delimiter ',''
+passwd: user '		# cut up the groups with the delimiter ','' does not exist
+ 
+useradd: invalid user name '		# echo $groups'
+passwd: user '		# echo $groups' does not exist
+ 
+useradd: invalid user name '		if [ ! -z "$groups" ]'
+passwd: user '		if [ ! -z "$groups" ]' does not exist
+ 
+useradd: invalid user name '		then'
+passwd: user '		then' does not exist
+ 
+useradd: invalid user name '			if [[ $groups == *","* ]]'
+passwd: user '			if [[ $groups == *","* ]]' does not exist
+ 
+useradd: invalid user name '			then'
+passwd: user '			then' does not exist
+ 
+useradd: invalid user name '				section=1'
+passwd: user '				section=1' does not exist
+ 
+useradd: invalid user name '				eachgroup=$(echo "$groups" | cut -d, -f$section)'
+passwd: user '				eachgroup=$(echo "$groups" | cut -d, -f$section)' does not exist
+ 
+useradd: invalid user name '				while [ ! -z "$eachgroup" ]'
+passwd: user '				while [ ! -z "$eachgroup" ]' does not exist
+ 
+useradd: invalid user name '				do'
+passwd: user '				do' does not exist
+ 
+useradd: invalid user name '					# attempt to create the group whether it exists or not and add the user to that group'
+passwd: user '					# attempt to create the group whether it exists or not and add the user to that group' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '	 NOT WORKING ???'
+passwd: user '	 NOT WORKING ???' does not exist
+ 
+useradd: invalid user name '					if [[ "$eachgroup" == "sudo" ]]'
+passwd: user '					if [[ "$eachgroup" == "sudo" ]]' does not exist
+ 
+useradd: invalid user name '					then'
+passwd: user '					then' does not exist
+ 
+useradd: invalid user name '	profile 2>> logfile'
+passwd: user '	profile 2>> logfile' does not exist
+ 
+useradd: invalid user name '					fi'
+passwd: user '					fi' does not exist
+ 
+useradd: invalid user name '					(( section++ ))'
+passwd: user '					(( section++ ))' does not exist
+ 
+useradd: invalid user name '					eachgroup=$(echo "$groups" | cut -d, -f$section)'
+passwd: user '					eachgroup=$(echo "$groups" | cut -d, -f$section)' does not exist
+ 
+useradd: invalid user name '				done'
+passwd: user '				done' does not exist
+ 
+useradd: invalid user name '			else'
+passwd: user '			else' does not exist
+ 
+useradd: invalid user name '	 (i'
+passwd: user '	 (i' does not exist
+ 
+useradd: invalid user name '				eachgroup=$(echo "$groups" | cut -d, -f1)'
+passwd: user '				eachgroup=$(echo "$groups" | cut -d, -f1)' does not exist
+ 
+useradd: invalid user name '				echo $eachgroup'
+passwd: user '				echo $eachgroup' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '				if [[ "$eachgroup" == "sudo" ]]'
+passwd: user '				if [[ "$eachgroup" == "sudo" ]]' does not exist
+ 
+useradd: invalid user name '				then'
+passwd: user '				then' does not exist
+ 
+useradd: invalid user name '	profile 2>> logfile'
+passwd: user '	profile 2>> logfile' does not exist
+ 
+useradd: invalid user name '				fi'
+passwd: user '				fi' does not exist
+ 
+useradd: invalid user name '			fi'
+passwd: user '			fi' does not exist
+ 
+useradd: invalid user name '		fi'
+passwd: user '		fi' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		# Shared folder is created with a soft link inside'
+passwd: user '		# Shared folder is created with a soft link inside' does not exist
+ 
+useradd: invalid user name '		if [ ! -z "$sharedfolder" ]'
+passwd: user '		if [ ! -z "$sharedfolder" ]' does not exist
+ 
+useradd: invalid user name '		then'
+passwd: user '		then' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '			# chmod - set permissions for the sharedfolder chmod XXX "/home/$username/shared" ???'
+passwd: user '			# chmod - set permissions for the sharedfolder chmod XXX "/home/$username/shared" ???' does not exist
+ 
+useradd: invalid user name '		fi'
+passwd: user '		fi' does not exist
+ 
+useradd: user '}}' already exists
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: warning: the home directory already exists.
+Not copying any file from skel directory into it.
+passwd: user '#' does not exist
+ 
+useradd: invalid user name 'ffunction main () {	'
+passwd: user 'ffunction main () {	' does not exist
+ 
+useradd: invalid user name '		args=$1'
+passwd: user '		args=$1' does not exist
+ 
+useradd: invalid user name '		numargs=$2'
+passwd: user '		numargs=$2' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		# check if arg/file provided when script executed'
+passwd: user '		# check if arg/file provided when script executed' does not exist
+ 
+useradd: invalid user name '		if [ $numargs -ne 1 ]'
+passwd: user '		if [ $numargs -ne 1 ]' does not exist
+ 
+useradd: invalid user name '		then'
+passwd: user '		then' does not exist
+ 
+useradd: invalid user name '			filename=$(getfilename)'
+passwd: user '			filename=$(getfilename)' does not exist
+ 
+useradd: invalid user name '		else'
+passwd: user '		else' does not exist
+ 
+useradd: invalid user name '			filename=$args'
+passwd: user '			filename=$args' does not exist
+ 
+useradd: invalid user name '		fi	'
+passwd: user '		fi	' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '	'
+passwd: user '	' does not exist
+ 
+useradd: invalid user name '		# if filename has a / in it then assume URI'
+passwd: user '		# if filename has a / in it then assume URI' does not exist
+ 
+useradd: invalid user name '		if [[ $filename == *"/"* ]]'
+passwd: user '		if [[ $filename == *"/"* ]]' does not exist
+ 
+useradd: invalid user name '		then'
+passwd: user '		then' does not exist
+ 
+useradd: invalid user name '			echo "URI provided - checking if file exists on server"'
+passwd: user '			echo "URI provided - checking if file exists on server"' does not exist
+ 
+useradd: invalid user name '			'
+passwd: user '			' does not exist
+ 
+useradd: invalid user name '			# use wget --spider, if error output redirected then check result true/false'
+passwd: user '			# use wget --spider, if error output redirected then check result true/false' does not exist
+ 
+useradd: invalid user name '	ict'
+passwd: user '	ict' does not exist
+ 
+useradd: invalid user name '	1 200 OK'` ]]'
+passwd: user '	1 200 OK'` ]]' does not exist
+ 
+useradd: invalid user name '			then'
+passwd: user '			then' does not exist
+ 
+useradd: invalid user name '	'
+passwd: user '	' does not exist
+ 
+useradd: invalid user name '				wget $filename'
+passwd: user '				wget $filename' does not exist
+ 
+useradd: invalid user name '				# After downloading the file, remove the actual filename from the URI with 'basename''
+passwd: user '				# After downloading the file, remove the actual filename from the URI with 'basename'' does not exist
+ 
+useradd: invalid user name '				onlyfile=$(basename -- "$filename")'
+passwd: user '				onlyfile=$(basename -- "$filename")' does not exist
+ 
+useradd: invalid user name '				filename=$onlyfile'
+passwd: user '				filename=$onlyfile' does not exist
+ 
+useradd: invalid user name '			else'
+passwd: user '			else' does not exist
+ 
+useradd: invalid user name '				echo -e "e[91emFile does NOT exist on the servere[39m"'
+passwd: user '				echo -e "e[91emFile does NOT exist on the servere[39m"' does not exist
+ 
+useradd: invalid user name '				exit'
+passwd: user '				exit' does not exist
+ 
+useradd: invalid user name '			fi'
+passwd: user '			fi' does not exist
+ 
+useradd: invalid user name '		else'
+passwd: user '		else' does not exist
+ 
+useradd: invalid user name '			echo " "'
+passwd: user '			echo " "' does not exist
+ 
+useradd: invalid user name '			'
+passwd: user '			' does not exist
+ 
+useradd: invalid user name '			# echo $filename'
+passwd: user '			# echo $filename' does not exist
+ 
+useradd: invalid user name '			# Check if file exists in the local folder'
+passwd: user '			# Check if file exists in the local folder' does not exist
+ 
+useradd: invalid user name '			path=$PWD"/$filename"'
+passwd: user '			path=$PWD"/$filename"' does not exist
+ 
+useradd: invalid user name '			# echo $path'
+passwd: user '			# echo $path' does not exist
+ 
+useradd: invalid user name '			echo -e "Local file provided at path : e[33m$pathe[39m"		'
+passwd: user '			echo -e "Local file provided at path : e[33m$pathe[39m"		' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '			if [[ -f "$path" ]]'
+passwd: user '			if [[ -f "$path" ]]' does not exist
+ 
+useradd: invalid user name '			then'
+passwd: user '			then' does not exist
+ 
+useradd: invalid user name '				echo -e "e[33mSUCCESS! File exists in the local foldere[39m"'
+passwd: user '				echo -e "e[33mSUCCESS! File exists in the local foldere[39m"' does not exist
+ 
+useradd: invalid user name '			else'
+passwd: user '			else' does not exist
+ 
+useradd: invalid user name '				echo -e "e[91mThe file does not existe[39m"'
+passwd: user '				echo -e "e[91mThe file does not existe[39m"' does not exist
+ 
+useradd: invalid user name '				exit'
+passwd: user '				exit' does not exist
+ 
+useradd: invalid user name '			fi'
+passwd: user '			fi' does not exist
+ 
+useradd: invalid user name '		fi'
+passwd: user '		fi' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		# filename should now be local			'
+passwd: user '		# filename should now be local			' does not exist
+ 
+useradd: invalid user name '		# use IFS ''
+passwd: user '		# use IFS '' does not exist
+ 
+useradd: invalid user name '		# start a new logfile entry'
+passwd: user '		# start a new logfile entry' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '	txt'
+passwd: user '	txt' does not exist
+ 
+useradd: invalid user name '		usercount=0'
+passwd: user '		usercount=0' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		OLDIFS=$IFS'
+passwd: user '		OLDIFS=$IFS' does not exist
+ 
+useradd: invalid user name '		IFS="'
+passwd: user '		IFS="' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		# Main loop that extracts lines from the users file and uses the fields for user creation'
+passwd: user '		# Main loop that extracts lines from the users file and uses the fields for user creation' does not exist
+ 
+useradd: invalid user name '		while read email birthdate groups sharedfolder'
+passwd: user '		while read email birthdate groups sharedfolder' does not exist
+ 
+useradd: invalid user name '		do'
+passwd: user '		do' does not exist
+ 
+useradd: invalid user name '	 Ignore the first line which is headings only'
+passwd: user '	 Ignore the first line which is headings only' does not exist
+ 
+useradd: invalid user name '			if [ "$usercount" -gt 0 ]'
+passwd: user '			if [ "$usercount" -gt 0 ]' does not exist
+ 
+useradd: invalid user name '			then'
+passwd: user '			then' does not exist
+ 
+useradd: invalid user name '				# echo $email'
+passwd: user '				# echo $email' does not exist
+ 
+useradd: invalid user name '	'
+passwd: user '	' does not exist
+ 
+useradd: invalid user name '				createuser $email $birthdate $groups $sharedfolder $logfile'
+passwd: user '				createuser $email $birthdate $groups $sharedfolder $logfile' does not exist
+ 
+useradd: invalid user name '			fi'
+passwd: user '			fi' does not exist
+ 
+useradd: invalid user name '			(( usercount++ ))'
+passwd: user '			(( usercount++ ))' does not exist
+ 
+useradd: invalid user name '		done < $filename'
+passwd: user '		done < $filename' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		IFS=$OLDIFS'
+passwd: user '		IFS=$OLDIFS' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '		# Results'
+passwd: user '		# Results' does not exist
+ 
+useradd: invalid user name '		echo " "'
+passwd: user '		echo " "' does not exist
+ 
+useradd: invalid user name '		echo -e "e[33mCOMPLETED: With $(( usercount-1 )) users createde[39m"'
+passwd: user '		echo -e "e[33mCOMPLETED: With $(( usercount-1 )) users createde[39m"' does not exist
+ 
+useradd: invalid user name '		'
+passwd: user '		' does not exist
+ 
+useradd: invalid user name '	'
+passwd: user '	' does not exist
+ 
+useradd: invalid user name '		read -p "Do you wish to view the log file? (Yy/Nn): " yn'
+passwd: user '		read -p "Do you wish to view the log file? (Yy/Nn): " yn' does not exist
+ 
+useradd: invalid user name '		if [ "$yn" = "Y" ] || [ "$yn" = "y" ]'
+passwd: user '		if [ "$yn" = "Y" ] || [ "$yn" = "y" ]' does not exist
+ 
+useradd: invalid user name '		then'
+passwd: user '		then' does not exist
+ 
+useradd: invalid user name '			clear		'
+passwd: user '			clear		' does not exist
+ 
+useradd: invalid user name '	txt | less'
+passwd: user '	txt | less' does not exist
+ 
+useradd: invalid user name '		fi'
+passwd: user '		fi' does not exist
+ 
+useradd: user '}}' already exists
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: invalid user name '## END OF FUNCTIONS --------------------------------------------------------------------'
+passwd: user '## END OF FUNCTIONS --------------------------------------------------------------------' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+useradd: warning: the home directory already exists.
+Not copying any file from skel directory into it.
+passwd: user '#' does not exist
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+ 
+ 
+ 
+useradd: invalid user name 'mmain "$args" "$numargs"'
+passwd: user 'mmain "$args" "$numargs"' does not exist
+ 
+ 
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+
+ 
+***************************************************************************
+LOGGING FOR DATE & TIME:  05/06/2021 13:24:19
+***************************************************************************
+ 
+useradd: user 'edijkstra' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/edijkstra/shared/staffData': File exists
+ 
+useradd: user 'jmccarthy' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/jmccarthy/shared/visitorData': File exists
+ 
+useradd: user 'atanenbaum' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/atanenbaum/shared/staffData': File exists
+ 
+useradd: user 'aturing' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/aturing/shared/visitorData': File exists
+ 
+useradd: user 'ltorvalds' already exists
+ 
+useradd: user 'bstroustroup' already exists
+ 
+useradd: user 'kthompson' already exists
+mkdir: cannot create directory ‘/visitor’: File exists
+ln: failed to create symbolic link '/home/kthompson/shared/visitor': File exists
+ 
+useradd: user 'jgosling' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/jgosling/shared/staffData': File exists
+ 
+useradd: user 'tberners-lee' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/tberners-lee/shared/visitorData': File exists
+***************************************************************************
+LOGGING FOR DATE & TIME:  05/06/2021 13:26:17
+***************************************************************************
+ 
+useradd: user 'edijkstra' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/edijkstra/shared/staffData': File exists
+ 
+useradd: user 'jmccarthy' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/jmccarthy/shared/visitorData': File exists
+ 
+useradd: user 'atanenbaum' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/atanenbaum/shared/staffData': File exists
+ 
+useradd: user 'aturing' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/aturing/shared/visitorData': File exists
+ 
+useradd: user 'ltorvalds' already exists
+ 
+useradd: user 'bstroustroup' already exists
+ 
+useradd: user 'kthompson' already exists
+mkdir: cannot create directory ‘/visitor’: File exists
+ln: failed to create symbolic link '/home/kthompson/shared/visitor': File exists
+ 
+useradd: user 'jgosling' already exists
+mkdir: cannot create directory ‘/staffData’: File exists
+ln: failed to create symbolic link '/home/jgosling/shared/staffData': File exists
+ 
+useradd: user 'tberners-lee' already exists
+mkdir: cannot create directory ‘/visitorData’: File exists
+ln: failed to create symbolic link '/home/tberners-lee/shared/visitorData': File exists

@@ -62,7 +62,8 @@ function createuser () {
 	sharedfolder=$4
 	
 	# blank lines on screen an in logfile to seperate sections
-	echo -e "\e[33mEmail:\e[39m $email / \e[33mDOB:\e39m $birthdate / \e[33mGroups:\e[39em $groups / \e[33mShared:\e[39em $sharedfolder"
+	echo " "
+	echo -e "\e[33mEmail:\e[39m $email / \e[33mDOB:\e[39m $birthdate / \e[33mGroups:\e[39m $groups / \e[33mShared:\e[39m $sharedfolder"
 	echo " "
 	echo " " >> logfile.txt
 	
@@ -148,27 +149,29 @@ function main () {
 		# wget example uri - http://kate.ict.op.ac.nz/~faisalh/IN617linux/users.csv 	
 		if [[ `wget -S --spider $filename 2>&1 | grep 'HTTP/1.1 200 OK'` ]]
 		then
-			echo "File exists on server .. downloading it"
+			echo -e "\e[33mFile exists on server ... downloading it\e[39m"
 			wget $filename
 			# After downloading the file, remove the actual filename from the URI with 'basename'
 			onlyfile=$(basename -- "$filename")
 			filename=$onlyfile
 		else
-			echo "File does not exist on server"
+			echo -e "\e[91emFile does NOT exist on the server\e[39m"
 			exit
 		fi
 	else
-		echo "Local filename provided"
-		echo $filename
+		echo " "
+		
+		# echo $filename
 		# Check if file exists in the local folder
 		path=$PWD"/$filename"
-		echo $path
+		# echo $path
+		echo -e "Local file provided at path : \e[33m$path\e[39m"		
 
 		if [[ -f "$path" ]]
 		then
-			echo "File exists in local folder"
+			echo -e "\e[33mSUCCESS! File exists in the local folder\e[39m"
 		else
-			echo "The file does not exist"
+			echo -e "\e[91mThe file does not exist\e[39m"
 			exit
 		fi
 	fi
@@ -190,7 +193,7 @@ function main () {
 		# loop through the users file. Ignore the first line which is headings only.
 		if [ "$usercount" -gt 0 ]
 		then
-			echo $email
+			# echo $email
 			# Call the create function with arguements provided from the users file.
 			createuser $email $birthdate $groups $sharedfolder $logfile
 		fi
@@ -200,7 +203,8 @@ function main () {
 	IFS=$OLDIFS
 	
 	# Results
-	echo $(( usercount-1 ))" users have been created"
+	echo " "
+	echo -e "\e[33mCOMPLETED: With $(( usercount-1 )) users created\e[39m"
 	
 	# Ask user if they want to view the logfile.
 	read -p "Do you wish to view the log file? (Yy/Nn): " yn
