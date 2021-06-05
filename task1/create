@@ -9,14 +9,15 @@
 function title () {
 	clear
 	echo " "
-	echo 'Task 1 Script to create user environments'
-	echo "*****************************************"
+	echo -e "\e[33m*******************************************"
+	echo -e "Task 1 - Script to create user environments"
+	echo -e "*******************************************\e[39m"
 	echo " "
 }
 
 function end () {
 	echo " "
-	echo 'Thanks for using the script. Goodbye ...'
+	echo "Thanks for using the script. Goodbye ..."
 }
 
 # if a filename/URI was not supplied as an arguement when running the script
@@ -59,7 +60,8 @@ function createuser () {
 	birthdate=$2
 	groups=$3
 	sharedfolder=$4
-	
+	echo " "
+	echo " " >> logfile.txt
 	# create username from email address
 	username=$(getusername $email)
 
