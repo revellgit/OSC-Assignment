@@ -63,7 +63,7 @@ function createuser () {
 	
 	# blank lines on screen an in logfile to seperate sections
 	echo " "
-	echo -e "\e[33mEmail:\e[39m $email / \e[33mDOB:\e[39m $birthdate / \e[33mGroups:\e[39m $groups / \e[33mShared:\e[39m $sharedfolder"
+	echo -e "\e[33mEmail:\e[39m $email = \e[33mDOB:\e[39m $birthdate = \e[33mGroups:\e[39m $groups = \e[33mShared:\e[39m $sharedfolder"
 	echo " "
 	echo " " >> logfile.txt
 	
@@ -72,9 +72,11 @@ function createuser () {
 
 	# Add the user called 'username' and log any errors 
 	# sudo userdel $username
+	echo "Creating the user account"
 	sudo useradd -m $username 2>> logfile.txt
 	
 	# add password to create user. Password expires so that it must be changed on login
+	echo "Creating and setting the password"
 	MONTH=$(date -d "$birthdate" '+%m')
 	YEAR=$(date -d "$birthdate" '+%Y')
 	pass=$MONTH$YEAR
@@ -85,6 +87,8 @@ function createuser () {
 	# check if the group field contains commas (i.e. several groups to create or add the user to)
 	# cut up the groups with the delimiter ','
 	# echo $groups
+	echo "Creating group/s and adding the user if required"
+	echo "Attempting to create an alias for sudo users"
 	if [ ! -z "$groups" ]
 	then
 		if [[ $groups == *","* ]]
@@ -99,7 +103,7 @@ function createuser () {
 				# if the user belongs to sudo then create the alias. NOT WORKING ???
 				if [[ "$eachgroup" == "sudo" ]]
 				then
-					echo 'alias off="systemctl poweroff"' >> /home/$username/.profile 2>> logfile.txt
+				sudo echo 'alias off="systemctl poweroff"' >> /home/$username/.bash_aliases 2>> logfile.txt
 				fi
 				(( section++ ))
 				eachgroup=$(echo "$groups" | cut -d, -f$section)
@@ -107,12 +111,12 @@ function createuser () {
 		else
 			# if the groups field doesn't contain commas then just add one group etc. (i.e. no while loop needed)
 			eachgroup=$(echo "$groups" | cut -d, -f1)
-			echo $eachgroup
+			# echo $eachgroup
 			sudo groupadd -f $eachgroup 2>> logfile.txt
 			sudo usermod -aG $eachgroup $username 2>> logfile.txt
 			if [[ "$eachgroup" == "sudo" ]]
 			then
-				echo 'alias off="systemctl poweroff"' >> /home/$username/.profile 2>> logfile.txt
+				sudo echo 'alias off="systemctl poweroff"' >> /home/$username/.bash_aliases 2>> logfile.txt
 			fi
 		fi
 	fi
@@ -120,9 +124,15 @@ function createuser () {
 	# Shared folder is created with a soft link inside
 	if [ ! -z "$sharedfolder" ]
 	then
+		
+		echo "Creating a shared folder (if required) and adjusting permissions"
+
 		sudo mkdir $sharedfolder 2>> logfile.txt
 		sudo ln -s "$sharedfolder" "/home/$username/shared" 2>> logfile.txt
-		# chmod - set permissions for the sharedfolder chmod XXX "/home/$username/shared" ???
+		# chmod - set permissions for the sharedfolder 
+		sudo chmod 770 "/home/$username/shared" 2>> logfile.txt
+		# change ownership of the sharedfolder - chown ?
+		sudo chown root "/home/$username/shared" 2>> logfile.txt
 	fi
 }
 
@@ -155,7 +165,7 @@ function main () {
 			onlyfile=$(basename -- "$filename")
 			filename=$onlyfile
 		else
-			echo -e "\e[91emFile does NOT exist on the server\e[39m"
+			echo -e "\e[91mFile does NOT exist on the server\e[39m"
 			exit
 		fi
 	else
@@ -176,12 +186,25 @@ function main () {
 		fi
 	fi
 	
+	# Check the user wants to proceed before launching into user creation
+	echo " "
+	read -p "Are you sure you wish to proceed? (y/n): " yn
+	if [ "$yn" != "y" ] && [ "$yn" != "Y" ]
+	then
+		echo "EXITING ..."
+		exit
+	fi
+
+	echo "Checking your credentials ... (are you a sudo ?)"
+	sudo echo " "
+
 	# filename should now be local			
 	# use IFS ';' separator/delimiter save and restore current/old IFS
 	# start a new logfile entry
 	echo "***************************************************************************" >> logfile.txt
 	echo "LOGGING FOR DATE & TIME: " $(date '+%d/%m/%Y %H:%M:%S') >> logfile.txt
 	echo "***************************************************************************" >> logfile.txt
+
 	usercount=0
 	
 	OLDIFS=$IFS
